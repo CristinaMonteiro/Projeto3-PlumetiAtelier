@@ -1,0 +1,377 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#Index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+#Index::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(/img/background4.jpg);
+  background-size: cover;
+  background-position: top center;
+  overflow: hidden;
+  opacity: 0.65;
+}
+
+#Index h1 a {
+  position: relative;
+  color: #837c7c;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 15px;
+  height: 25%;
+  left: 25%;
+  margin-top: 15px;
+}
+
+.balao {
+  display: inline;
+  /* width: 90%; */
+}
+
+.balao .balao_1, .balao .balao_2, .balao .balao_3, .balao .balao_4 {
+  position: absolute;
+  width: 12%;
+  /*width: 250px; */
+  border-radius: 50%;
+}
+
+.balao .balao_1 {
+  left: 14%;
+  top: 29%;
+}
+
+.balao .balao_2 {
+  left: 33.3%;
+  top: 29%;
+}
+
+.balao .balao_3 {
+  left: 52.6%;
+  top: 29%;
+}
+
+.balao .balao_4 {
+  left: 71.9%;
+  top: 29%;
+}
+
+/*Navigation bar 
+- irá estar presente em todas as páginas*/
+#Navbar {
+  position: relative;
+  height: 25%;
+  left: 77%;
+  margin-top: 15px;
+}
+
+#Navbar ul {
+  list-style-type: none;
+}
+
+#Navbar ul li {
+  text-align: center;
+  display: inline;
+}
+
+#Navbar ul li a {
+  color: black;
+  font-size: 20px;
+  padding: 8px 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#Navbar ul li a:hover {
+  background-color: #a5a3a3;
+  color: white;
+}
+
+.quote p {
+  margin-top: 4%;
+  margin-left: 35%;
+  width: 750px;
+  height: 10%;
+  font-size: 26px;
+  text-align: center;
+  font-style: oblique;
+  color: #575454;
+}
+
+.texto-sobre_nos {
+  position: absolute;
+  display: block;
+  left: 33.3%;
+  right: 33.3%;
+  top: 10%;
+  bottom: 35%;
+  width: 33.3%;
+  height: 75%;
+  background-color: #f1f1d4;
+}
+
+.texto-sobre_nos h2 {
+  position: absolute;
+  top: 10%;
+  left: 47%;
+}
+
+.texto-sobre_nos p {
+  position: absolute;
+  width: 70%;
+  height: 80%;
+  top: 17%;
+  left: 15%;
+  right: 15%;
+  text-align: justify;
+}
+
+.texto-sobre_nos .assinatura {
+  /*aquiiii*/
+  position: absolute;
+  top: 92%;
+  left: 78.5%;
+}
+
+.h2-spring_collection {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  font-family: open sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.box1 {
+  position: absolute;
+  background-color: white;
+  width: 350px;
+  overflow: hidden;
+  left: 15%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.box2 {
+  position: absolute;
+  background-color: white;
+  width: 350px;
+  overflow: hidden;
+  position: absolute;
+  left: 35%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.box3 {
+  position: absolute;
+  background-color: white;
+  width: 350px;
+  overflow: hidden;
+  position: absolute;
+  left: 55%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.box4 {
+  position: absolute;
+  background-color: white;
+  width: 350px;
+  overflow: hidden;
+  position: absolute;
+  left: 75%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.box5 {
+  position: absolute;
+  background-color: white;
+  width: 350px;
+  overflow: hidden;
+  position: absolute;
+  left: 15%;
+  top: 85%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.box6 {
+  position: absolute;
+  background-color: white;
+  width: 350px;
+  overflow: hidden;
+  position: absolute;
+  left: 35%;
+  top: 85%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.box7 {
+  position: absolute;
+  background-color: white;
+  width: 350px;
+  overflow: hidden;
+  position: absolute;
+  left: 55%;
+  top: 85%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.box8 {
+  position: absolute;
+  background-color: white;
+  width: 350px;
+  overflow: hidden;
+  position: absolute;
+  left: 75%;
+  top: 85%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.slide-img {
+  max-width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.slide-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.detail-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.type a {
+  text-decoration: none;
+  color: #222222;
+  margin: 5px 0px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-right: 8px;
+}
+
+.type span {
+  color: black;
+}
+
+.price {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-family: poppins;
+  letter-spacing: 0.5px;
+}
+
+/*Contactos.html*/
+.contactos-square {
+  display: block;
+  left: 25%;
+  right: 25%;
+  top: 20%;
+  bottom: 35%;
+  position: absolute;
+  width: 40%;
+  height: 55%;
+  background-color: #f1f1d4;
+}
+
+.contactos-square p {
+  font-size: 22px;
+}
+
+.contactos-square h2 {
+  margin-top: 5%;
+}
+
+.contactos-square h2, .contactos-square .apoio-p {
+  text-align: center;
+  line-break: loose;
+}
+
+.contactos-square .apoio-p {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contactos-square .telefone {
+  margin-top: 8%;
+  margin-left: 32%;
+}
+
+.contactos-square .horario {
+  font-size: 17px;
+}
+
+.contactos-square .email, .contactos-square .morada {
+  margin-top: 4%;
+  margin-left: 32%;
+}
+
+.contactos-square svg {
+  width: 20px;
+}
+
+.contactos-square .informacao {
+  display: inline;
+  margin-left: 5%;
+}
+
+.contactos-square .line {
+  height: black 15px;
+  width: 70%;
+  margin-top: 3%;
+}
+/*# sourceMappingURL=style.css.map */

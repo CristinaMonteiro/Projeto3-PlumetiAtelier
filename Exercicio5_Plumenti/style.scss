@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Index {
+    display: flex;
+    height: 100%;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url(/img/background4.jpg);
+        background-size: cover;
+        background-position: top center;
+        overflow: hidden;
+        opacity: 0.65;
+    }
+
+    & h1 a {
+        position: relative;
+        color: rgb(131, 124, 124);
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+        font-size: 30px;
+        padding-left: 15px;
+        height: 25%;
+        left: 25%;
+        margin-top: 15px;
+    }
+}
+
+.balao {
+        display: inline;
+        /* width: 90%; */
+        
+    & .balao_1, .balao_2, .balao_3, .balao_4 {
+        position: absolute;
+        width: 12%;
+        /*width: 250px; */
+        border-radius: 50%;
+    }
+
+    & .balao_1 {
+        left: 14%;
+        top: 29%;
+    }
+
+    & .balao_2 {
+        left: 33.3%;
+        top: 29%;
+    }
+
+    & .balao_3 {
+        left: 52.6%;
+        top: 29%;
+    }
+
+    & .balao_4 {
+        left: 71.9%;
+        top: 29%;
+        
+    }
+   
+}
+    
+/*Navigation bar 
+- irá estar presente em todas as páginas*/
+#Navbar {
+    position: relative;
+    height: 25%;
+    left: 77%;
+    margin-top: 15px;
+    
+    
+    
+    & ul {
+        list-style-type: none;
+
+    }
+       
+    & ul li {
+        text-align: center;
+        display: inline;
+    }
+       
+    & ul li a {
+        color: black;
+        font-size: 20px;
+        padding: 8px 16px; 
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    & ul li a:hover {
+        background-color: rgb(165, 163, 163);
+        color: white; 
+    } 
+
+}
+
+.quote p{
+    margin-top: 4%;
+    margin-left: 35%;
+    width: 750px;
+    height: 10%;
+    font-size: 26px;
+    text-align: center;
+    font-style: oblique;
+    color: rgb(87, 84, 84);
+               
+}
+
+
+
+.texto-sobre_nos {
+    position: absolute;
+    display: block;
+    left: 33.3%;
+    right: 33.3%;
+    top: 10%;
+    bottom: 35%;
+    width: 33.3%;
+    height: 75%;
+    background-color: rgb(241, 241, 212);
+
+    & h2{
+        position: absolute;
+        top: 10%;
+        left: 47%;
+    }
+
+    & p {
+        position: absolute;
+        width: 70%;
+        height: 80%;
+        top: 17%;
+        left: 15%;
+        right: 15%;
+        text-align: justify;
+    } 
+
+    & .assinatura{ /*aquiiii*/
+        position: absolute;
+        top: 92%;
+        left: 78.5%;
+    }
+}
+
+.h2-spring_collection{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-family: open sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+.box1 {
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    overflow: hidden;
+    left: 15%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.box2 {
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    overflow: hidden;
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.box3 {
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    overflow: hidden;
+    position: absolute;
+    left: 55%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.box4 {
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    overflow: hidden;
+    position: absolute;
+    left: 75%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+
+.box5 {
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    overflow: hidden;
+    position: absolute;
+    left: 15%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.box6 {
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    overflow: hidden;
+    position: absolute;
+    left: 35%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.box7 {
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    overflow: hidden;
+    position: absolute;
+    left: 55%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.box8 {
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    overflow: hidden;
+    position: absolute;
+    left: 75%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+}
+
+
+.slide-img {
+    max-width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+
+.slide-img img {
+    width:100%;
+	height: 100%;
+	object-fit: cover;
+	box-sizing: border-box;
+}
+
+
+
+.detail-box{
+	width: 100%;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 6px 20px;
+	box-sizing: border-box;
+}
+
+.type{
+	display: flex;
+	flex-direction: column;
+}
+
+.type a{
+    text-decoration: none;
+	color:#222222;
+	margin: 5px 0px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	padding-right: 8px;
+}
+
+.type span {
+	color: black;
+}
+.price{
+    text-decoration: none;
+	color: #333333;
+	font-weight: 600;
+	font-size: 1.1rem;
+	font-family: poppins;
+	letter-spacing: 0.5px;
+}
+
+
+/*Contactos.html*/
+.contactos-square {
+    display: block;
+    left: 25%;
+    right: 25%;
+    top: 20%;
+    bottom: 35%;
+    position: absolute;
+    width: 40%;
+    height: 55%;
+    background-color: rgb(241, 241, 212);
+
+    & p {
+        font-size: 22px;
+    }
+
+     h2 {
+        margin-top: 5%;
+     }
+
+    & h2, .apoio-p{
+        text-align: center;
+        line-break: loose;
+    }
+
+    & .apoio-p{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    & .telefone {
+        margin-top: 8%;
+        margin-left: 32%;
+    }
+    
+    & .horario {
+        font-size: 17px;
+    }
+
+    & .email, .morada {
+        margin-top: 4%;
+        margin-left: 32%;
+    }
+
+    & svg {
+        width: 20px;
+    }
+
+    & .informacao {
+        display: inline;
+        margin-left: 5%;
+    }
+
+    & .line {
+        height: black 15px;
+        width: 70%;
+        margin-top: 3%;
+    }
+}
