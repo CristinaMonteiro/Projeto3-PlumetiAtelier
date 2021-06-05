@@ -1,0 +1,351 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#Index {
+    display: flex;
+    height: 100%;
+
+    & h1 a {
+        position: relative;
+        color: rgb(131, 124, 124);
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+        font-size: 30px;
+        padding-left: 15px;
+    }
+}
+
+.voltar-palavra {
+    margin-top: 0%; 
+    margin-left: 3%;
+    color: rgb(131, 124, 124);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.carousel {
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(7, 7, 7, 0.64);
+    width: 650px;
+    height: 850px;
+    margin-top: 4%;
+    left: 20%;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-top: 15px;
+    width: 650px;
+    height: 800px;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    width: 575px;
+    height: 850px;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    margin-right: 13%;
+    margin-left: 3%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: red;
+}
+
+
+.caixa-descricao {
+    position: absolute;
+    box-shadow: 5px 5px 10px rgba(7, 7, 7, 0.64);
+    background-color: white;
+    left: 42%;
+    top: 19%;
+    width: 600px;
+    height: 850px;
+
+    & .nome-peca {
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 900;
+        font-style: justify;
+    }
+
+    & .ref {
+        font-weight: 600;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 21%;
+        top: 10%;
+    }
+
+    & .preco {
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 900;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+    }
+
+
+    & .tamanho-peca {
+        position: relative;
+        list-style: none;
+        height: 150px;
+        width: 100px;
+        padding-left: 40%;
+        padding-top: 3%;
+        display: flex;
+        flex-direction: row;
+
+        & a {
+            color: black;
+
+            & :hover {
+                color: red;
+            }
+        }
+        
+        & .S {
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+
+        & .M {
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+
+        & .L {
+            text-decoration: none;
+            margin-right: 1rem;
+            
+        }
+
+        & .XL {
+            text-decoration: none;
+        }
+    }
+
+    & .butao_adicionar-ao-cesto {
+        position: absolute;
+        margin-top: 2%;
+        top: 27%;
+        left: 30%;
+        padding: 10px 13px;
+        font-size: 16px;
+        text-transform: uppercase; 
+        cursor: pointer; 
+    }    
+        
+    .butao_adicionar-ao-cesto:hover{
+        background-color: rgb(181, 178, 178);
+    }
+
+    .butao_adicionar-ao-cesto:active {
+        background-color: black;
+        color: white;
+        transform: translateY(4px);
+    }
+    
+
+    & .informacoes-peca {
+        & h3{
+            margin-top: -7%;
+            margin-left: 7%;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        & p {
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 18px;
+            font-style: justify;
+        }
+    }
+
+    & .cuidados-peca {
+        color: black;
+       
+
+        & h3{
+            font-weight: bold;
+            margin-top: 5%;
+            margin-left: 7%;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        & img {
+            position: relative;
+            display: inline;
+            left: 7%;
+            width: 25px;
+        }
+
+        & .lavar-1 {
+            margin-left: 14%;
+            margin-top: -5%;
+            font-size: 17px;
+            font-weight: normal;
+        }
+
+        & .lavar-2 {
+            margin-left: 14%;
+            margin-top: -5%;
+            font-size: 17px;
+            font-weight: normal;
+        }
+
+        & .lavar-3 {
+            margin-left: 14%;
+            margin-top: -5%;
+            font-size: 17px;
+            font-weight: normal;
+        }
+
+        & .lavar-4 {
+            margin-left: 14%;
+            margin-top: -5%;
+            font-size: 17px;
+            font-weight: normal;
+        }
+
+        & .lavar-5 {
+            margin-left: 14%;
+            margin-top: -5%;
+            font-size: 17px;
+            font-weight: normal;
+        }
+    }
+
+    & .entrega-peca {
+        
+        & h3 {
+            margin-top: 5%;
+            margin-left: 7%;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        & .entrega-texto1{
+            margin-left: 10%;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        & .entrega-texto2{
+            margin-left: 11%;
+            font-size: 17px;
+            font-weight: 400;
+            color: rgb(111, 107, 107);
+        }
+
+        & .portes {
+            margin-top: -14%;
+            margin-left: 80%;
+            font-size: 17px;
+        }
+    
+    
+    }
+    
+
+    
+   
+}
+

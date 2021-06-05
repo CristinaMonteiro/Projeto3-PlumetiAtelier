@@ -1,0 +1,344 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#Index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+#Index h1 a {
+  position: relative;
+  color: #837c7c;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 15px;
+}
+
+.voltar-palavra {
+  margin-top: 0%;
+  margin-left: 3%;
+  color: #837c7c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.carousel {
+  position: relative;
+  -webkit-box-shadow: 5px 5px 10px rgba(7, 7, 7, 0.64);
+          box-shadow: 5px 5px 10px rgba(7, 7, 7, 0.64);
+  width: 650px;
+  height: 850px;
+  margin-top: 4%;
+  left: 20%;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-top: 15px;
+  width: 650px;
+  height: 800px;
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  width: 575px;
+  height: 850px;
+  padding-left: 2.5%;
+  padding-top: 2.5%;
+}
+
+.carousel-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  margin-right: 13%;
+  margin-left: 3%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 2%;
+}
+
+.carousel-control.next {
+  right: 2%;
+}
+
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-bullet {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.carousel-bullet:hover {
+  color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+  color: red;
+}
+
+.caixa-descricao {
+  position: absolute;
+  -webkit-box-shadow: 5px 5px 10px rgba(7, 7, 7, 0.64);
+          box-shadow: 5px 5px 10px rgba(7, 7, 7, 0.64);
+  background-color: white;
+  left: 42%;
+  top: 19%;
+  width: 600px;
+  height: 850px;
+}
+
+.caixa-descricao .nome-peca {
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  font-style: justify;
+}
+
+.caixa-descricao .ref {
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 21%;
+  top: 10%;
+}
+
+.caixa-descricao .preco {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+.caixa-descricao .tamanho-peca {
+  position: relative;
+  list-style: none;
+  height: 150px;
+  width: 100px;
+  padding-left: 40%;
+  padding-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.caixa-descricao .tamanho-peca a {
+  color: black;
+}
+
+.caixa-descricao .tamanho-peca a :hover {
+  color: red;
+}
+
+.caixa-descricao .tamanho-peca .S {
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.caixa-descricao .tamanho-peca .M {
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.caixa-descricao .tamanho-peca .L {
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.caixa-descricao .tamanho-peca .XL {
+  text-decoration: none;
+}
+
+.caixa-descricao .butao_adicionar-ao-cesto {
+  position: absolute;
+  margin-top: 2%;
+  top: 27%;
+  left: 30%;
+  padding: 10px 13px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.caixa-descricao .butao_adicionar-ao-cesto:hover {
+  background-color: #b5b2b2;
+}
+
+.caixa-descricao .butao_adicionar-ao-cesto:active {
+  background-color: black;
+  color: white;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.caixa-descricao .informacoes-peca h3 {
+  margin-top: -7%;
+  margin-left: 7%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.caixa-descricao .informacoes-peca p {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18px;
+  font-style: justify;
+}
+
+.caixa-descricao .cuidados-peca {
+  color: black;
+}
+
+.caixa-descricao .cuidados-peca h3 {
+  font-weight: bold;
+  margin-top: 5%;
+  margin-left: 7%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.caixa-descricao .cuidados-peca img {
+  position: relative;
+  display: inline;
+  left: 7%;
+  width: 25px;
+}
+
+.caixa-descricao .cuidados-peca .lavar-1 {
+  margin-left: 14%;
+  margin-top: -5%;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.caixa-descricao .cuidados-peca .lavar-2 {
+  margin-left: 14%;
+  margin-top: -5%;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.caixa-descricao .cuidados-peca .lavar-3 {
+  margin-left: 14%;
+  margin-top: -5%;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.caixa-descricao .cuidados-peca .lavar-4 {
+  margin-left: 14%;
+  margin-top: -5%;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.caixa-descricao .cuidados-peca .lavar-5 {
+  margin-left: 14%;
+  margin-top: -5%;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.caixa-descricao .entrega-peca h3 {
+  margin-top: 5%;
+  margin-left: 7%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.caixa-descricao .entrega-peca .entrega-texto1 {
+  margin-left: 10%;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.caixa-descricao .entrega-peca .entrega-texto2 {
+  margin-left: 11%;
+  font-size: 17px;
+  font-weight: 400;
+  color: #6f6b6b;
+}
+
+.caixa-descricao .entrega-peca .portes {
+  margin-top: -14%;
+  margin-left: 80%;
+  font-size: 17px;
+}
+/*# sourceMappingURL=style2.css.map */
